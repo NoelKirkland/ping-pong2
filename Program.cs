@@ -10,8 +10,8 @@ namespace Game
       Console.WriteLine("enter a number between 0-100!");
       string userString = Console.ReadLine();
       int userInt = int.Parse(userString);
-    
-      List<string> numberList = new List<string>{};
+      
+      List<string> numberList = new List<string> {};
 
       for (int index = 1; index <= userInt; index ++)
       {
@@ -33,10 +33,13 @@ namespace Game
         }
       }
 
-      Console.WriteLine(numberList);
-    
+      foreach (string index in numberList) 
+      {
+        Console.WriteLine(index);
+      }
     }
   }
 }
+
 
 
